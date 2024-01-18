@@ -6,7 +6,7 @@ const black: string = '#312D29'
 const white: string = '#ffffff'
 
 const MainTheme = createTheme({
-  shadows: Array(25).fill('rgba(149, 157, 165, 0.2) 0px 8px 24px') as Shadows,
+  shadows: Array(25).fill('none') as Shadows,
   palette: {
     primary: {
       main: `${black}`,
@@ -32,7 +32,23 @@ const MainTheme = createTheme({
       color: `${white}`,
       letterSpacing: '1px',
     },
+    subtitle1: {
+      fontFamily: 'Darker Grotesque',
+      letterSpacing: 2,
+      lineHeight: 1.2,
+      fontWeight: 300,
+      color: `${black}`
+    },
+    subtitle2: {
+      fontFamily: 'Darker Grotesque',
+      letterSpacing: 0,
+      lineHeight: 1.5,
+      fontWeight: 900,
+      color: `${black}`
+      
+    },
     fontFamily: [
+      'Darker Grotesque',
       'BlinkMacSystemFont',
       '"Segoe UI"',
       'Roboto',
