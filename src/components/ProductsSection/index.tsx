@@ -27,7 +27,6 @@ const ProductsSection: React.FC = () => {
 
   useEffect(() => {
     fetchProducts(search).then((res) => {
-      console.log(res)
       setProducts(res)
     })
   }, [search])

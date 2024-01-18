@@ -57,7 +57,6 @@ const Cart: React.FC = () => {
   }
 
   const handleRemoveFromCart = (data: any) => {
-    console.log(data)
     dispatch(removeFromCart(data))
   }
 
@@ -66,7 +65,6 @@ const Cart: React.FC = () => {
   }, 0)
 
   useEffect(() => {
-    console.log(cart)
   }, [cart])
 
   return (
