@@ -57,7 +57,7 @@ const Cart: React.FC = () => {
   }
 
   const handleRemoveFromCart = (data: any) => {
-    dispatch(removeFromCart(data))
+    dispatch(removeFromCart(data.id))
   }
 
   const total = cart.reduce((accumulator, obj) => {
