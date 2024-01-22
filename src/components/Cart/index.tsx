@@ -3,7 +3,6 @@ import {
   Typography,
   IconButton,
   Drawer,
-  Box,
   Button,
 } from '@mui/material'
 
@@ -58,7 +57,9 @@ const Cart: React.FC = () => {
           {
             cart.map((item) => {
               return (
-                <ItemWrapper>
+                <ItemWrapper
+                  key={Math.random() + item.id}
+                >
                   <Item key={Math.random() + item.id}>
                     {item.title} - R$ {item.price}
                   </Item>

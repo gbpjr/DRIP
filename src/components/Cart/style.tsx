@@ -11,8 +11,9 @@ export const DrawerBody = styled(Box)`
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 200px;
+  width: 250px;
   padding: 16px;
+  gap: 24px;
 
 ` 
 export const ListItem = styled.div`
@@ -25,7 +26,7 @@ export const ListItem = styled.div`
 
 export const Item = styled(Typography)`
   display: flex;
-  background: #FAE29C;
+  background: #FAFAFA;
   padding: 16px;
 `
 
